@@ -15,6 +15,10 @@ Here are the three places to start:
 - [Issue and Hypothesis Trees](/Trees)
 - [Pyramid technique - a simple recipe to structure your thought or writing](/Pyramid)
 
+## Tooling experiments
+
+[Issue Tree Workspace](tools/README.md) explores visual editing that connects Coggle-like maps, structured information, and detailed answers. The working brief and starting point for this work live in `tools/`.
+
 ## Origins
 
 The idea of issue trees, hypothesis trees and SCQA comes from the communication framework developed by Barbara Minto, a former McKinsey consultant. She termed the general approach the "Pyramid Principle".
@@ -26,4 +30,3 @@ The approach has been widely used in business communication and consulting.
 ## Who created this
 
 [Rufus Pollock](https://rufuspollock.com/) at [Life Itself](https://lifeitself.org/).
-
