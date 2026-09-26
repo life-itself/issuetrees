@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T22:41:10.631290+00:00",
+  "title": "Design System: Issue tree viewer",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm paper"
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Dark green ink"
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Branch teal"
+      }
+    },
+    "typographyMeta": {
+      "root": {
+        "displayName": "Central inquiry",
+        "purpose": "Map root only; Georgia gives the inquiry a distinct reading voice."
+      },
+      "question": {
+        "displayName": "Question",
+        "purpose": "Readable working text at fixed map width."
+      }
+    },
+    "shadows": [
+      {
+        "name": "import-panel",
+        "value": "0 16px 40px #263d3518",
+        "purpose": "Separate the open Markdown import panel from the map."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "background 0.15s ease-out",
+        "purpose": "Control hover feedback only under prefers-reduced-motion: no-preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-toolbar",
+        "value": "760px"
+      },
+      {
+        "name": "initial-outline",
+        "value": "650px"
+      }
+    ],
+    "focus": {
+      "outline": "2px solid #397a70",
+      "outlineOffset": "4px"
+    },
+    "connectors": {
+      "strokeWidth": 1.8,
+      "opacity": 0.65
+    },
+    "grid": {
+      "backgroundImage": "radial-gradient(#a3b0a72a 0.7px, transparent 0.7px)",
+      "backgroundSize": "22px 22px"
+    }
+  },
+  "components": [
+    {
+      "name": "Map answer",
+      "kind": "custom",
+      "refersTo": "map-answer",
+      "description": "Labelled answer beneath its question, with measured three-line preview.",
+      "html": "<div class=\"ds-answer\"><span class=\"ds-label\">Answer</span>Keep the reasoning beside its question.</div>",
+      "css": ".ds-answer { background:#eef2ec; color:#46594e; padding:9px 11px; border-radius:6px; font:13px/1.55 ui-sans-serif, sans-serif; } .ds-label {display:block; color:#376c58; font-size:11px; font-weight:650; margin-bottom:4px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Room for a better question",
+    "overview": "Coggle-inspired spatial reading with warm paper, dark green ink, curved branches and answers beneath questions.",
+    "keyCharacteristics": [
+      "Friendly curved branches",
+      "Fixed-width readable text",
+      "Tinted answers",
+      "Mobile outline"
+    ],
+    "rules": [
+      {
+        "name": "Colour identifies family",
+        "body": "Branch colours carry no inferred answer status.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Preserve reading context on expansion.",
+      "Use measured three-line answer previews."
+    ],
+    "donts": [
+      "Do not enclose every question in a card.",
+      "Do not vary answer width when expanding."
+    ]
+  }
+}

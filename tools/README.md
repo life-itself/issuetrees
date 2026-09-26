@@ -1,5 +1,9 @@
 # Issue Tree Workspace
 
+## Working viewer prototype
+
+The [Markdown viewer](viewer/README.md) is ready to try locally: `cd tools/viewer && npm ci && npm run dev`. It includes the rebrand sample, a Coggle-inspired map with inline answers, an outline, and a [design moodboard](viewer/design/moodboard.html). Implementation is tracked in Beads epic `issuetrees-4mv`; the original discovery task remains the portfolio link.
+
 Tools and skills for visualising and editing issue trees: combine Coggle's visual intuitiveness, a spreadsheet's structured information, and the freedom to write detailed descriptions and answers.
 
 This is the starting brief for the tooling work within `life-itself/issuetrees`, the repository behind issuetrees.com. **Issue Tree Workspace** is a working name. The first deliverable could be a skill, a connected set of views over existing files, or an application; that choice is still open.

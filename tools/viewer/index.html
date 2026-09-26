@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f3" />
+    <title>Issue Trees — a little room to think</title>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./" aria-label="Issue Trees home"
+        ><svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M5 16h8m0 0c6 0 3-9 13-9m-13 9h13m-13 0c6 0 3 9 13 9" /></svg
+        >Issue Trees</a
+      ><span class="tagline">A little room to think.</span>
+      <nav aria-label="Document">
+        <button id="sample">Rebrand example</button
+        ><button id="paste-toggle">Paste Markdown</button
+        ><button class="primary" id="open">
+          Open a file <span aria-hidden="true">↗</span></button
+        ><input
+          id="file"
+          type="file"
+          accept=".md,.markdown,.txt,text/plain"
+          hidden
+        />
+      </nav>
+    </header>
+    <section id="import" hidden>
+      <label for="markdown">Your Markdown tree</label
+      ><textarea
+        id="markdown"
+        spellcheck="false"
+        placeholder="- What are we trying to understand?&#10;  - What do we know? **✅ An answer goes here.**"
+      ></textarea>
+      <div>
+        <button class="primary" id="render">View tree</button
+        ><button id="cancel">Cancel</button><span>Stays in your browser.</span>
+      </div>
+    </section>
+    <div id="notice" role="status" hidden></div>
+    <main>
+      <section class="context">
+        <div>
+          <h1 id="document-name">Seeds of Renaissance</h1>
+          <p id="summary"></p>
+        </div>
+        <div class="view-switch" aria-label="View">
+          <button id="map-view" aria-pressed="true">Map</button
+          ><button id="outline-view" aria-pressed="false">Outline</button>
+        </div>
+      </section>
+      <div
+        id="viewport"
+        tabindex="0"
+        aria-label="Issue tree map. Drag empty space to pan. Use zoom controls to change scale."
+      >
+        <div id="world">
+          <svg id="connections" aria-hidden="true"></svg>
+          <div id="nodes"></div>
+        </div>
+      </div>
+      <div id="outline" hidden></div>
+      <footer>
+        <div class="map-controls">
+          <button id="zoom-out" aria-label="Zoom out">−</button
+          ><output id="zoom">100%</output
+          ><button id="zoom-in" aria-label="Zoom in">+</button
+          ><span class="divider"></span><button id="fit">Fit</button
+          ><button id="overview">Overview</button
+          ><button id="expand">Expand all</button>
+        </div>
+        <p id="hint">Drag to explore · Select a branch to unfold it</p>
+        <a href="./design/moodboard.html" target="_blank" rel="noopener"
+          >Design notes ↗</a
+        >
+      </footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
