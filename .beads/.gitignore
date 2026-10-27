@@ -82,3 +82,6 @@ bd.db
 
 # Runtime staging file for Beads auto-import
 .auto-import-issues.jsonl
+
+# Issue data syncs through Dolt; JSONL is optional local export.
+issues.jsonl
